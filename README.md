@@ -24,3 +24,10 @@ python manage.py runserver # Starts Django Server
 * Authentication functionality for Driver/User
 * Managing cars drivers & manufacturers directly from website interface
 * Powerful admin panel for advanced managing
+
+
+## Test user
+
+You can test project, using test user!
+* Login: my_best_mate
+* password: user12345
