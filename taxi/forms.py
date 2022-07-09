@@ -54,3 +54,21 @@ class DriverLicenseForm(forms.ModelForm):
     def clean_license_number(self):
         license_number = self.cleaned_data["license_number"]
         return validate_license_number(license_number=license_number)
+
+
+class ManufacturerSearchForm(forms.Form):
+    name = forms.CharField(
+        max_length=10,
+        required=False,
+        label="Search manufacturer",
+        widget=forms.TextInput(attrs={"placeholder": "Search by title"}),
+    )
+
+
+class CarSearchForm(forms.Form):
+    model = forms.CharField(
+        max_length=10,
+        required=False,
+        label="Search car",
+        widget=forms.TextInput(attrs={"placeholder": "Search by title"})
+    )
