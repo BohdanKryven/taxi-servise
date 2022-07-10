@@ -38,4 +38,4 @@ class Car(models.Model):
         ordering = ["id"]
 
     def __str__(self):
-        return self.model
+        return f"Model: {self.model} Manufacturer: {self.manufacturer.name}"
